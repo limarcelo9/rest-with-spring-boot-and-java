@@ -1,0 +1,14 @@
+spring:
+  batch:
+    jdbc:
+      initialize-schema: always
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db-core?useTimezone=true&serverTimezone=UTC
+    username: postgres
+    password: changeme
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
